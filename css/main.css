@@ -182,16 +182,22 @@ span.heading-contact {
 }
 
 .song:hover {
-    background-color: rgba(204, 126, 131, 0.5);
     cursor: pointer;
 }
 
-.song:hover::after {
-    content: ' (play)';
-}
+@media screen and (min-width: 414px){
+    .song:hover {
+        background-color: rgba(204, 126, 131, 0.5);
+        cursor: pointer;
+    }
 
-.song:active {
-    background-color: rgba(204, 126, 131, 0.3);
+    .song:hover::after {
+        content: ' (play)';
+    }
+
+    .song:active {
+        background-color: rgba(204, 126, 131, 0.3);
+    }
 }
 
 .song.song-selected::after {
