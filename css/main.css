@@ -157,7 +157,7 @@ span.heading-contact {
 .main-listing {
     background-color: #f8f8ed;
     padding-top: 100px;
-    padding-right: 10px;
+    padding-right: 40px;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -168,9 +168,8 @@ span.heading-contact {
 }
 
 .main-listing p {
-    width: 90%;
-    padding-left: 10px;
-    padding-right: 10px;    
+    width: 100%;
+    padding-left: 10px;  
 }
 
 .song {
@@ -265,7 +264,7 @@ span.heading-contact {
 
     .song {
         font-size: 1.2em;
-        padding-left: 40px !important;
+        padding-left: 30px !important;
     }
 }
 
