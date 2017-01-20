@@ -50,7 +50,7 @@ $(document).ready(function(){
 	
 	var name_spin = function(){
 
-		var word = "ANTON SCHMEER";
+		var word = "AНTON ЦCHMEРR";
 		var wordLength = word.length;
 		var scrambled = "";
 
