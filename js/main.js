@@ -64,8 +64,17 @@ $(document).ready(function(){
 
 	}
 
+	spinAlt = 0;
 	var stop_name_spin = function() {
-	    $('.my-name').text('ANTON SCHMEER');
+		if(spinAlt === 0){
+			$('.my-name').css('font-family', 'helvetica').css('font-size', '0.95em').text('АНТОН СЦХМЕЕР');
+			spinAlt += 1;
+		}
+		else if(spinAlt === 1){
+			$('.my-name').empty().css('font-family', 'TIActuBeta-Regular_web').css('font-size', '1em').text('ANTON SCHMEER');
+			spinAlt -= 1;
+		}
+	    
 	}
 
 	$('.main-listing').scroll(function(){
