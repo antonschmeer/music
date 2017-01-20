@@ -16,7 +16,7 @@ $(document).ready(function(){
 		myAudio.addEventListener("ended", function(){
 		    song_ended(song);
 		});
-	})
+	});
 
 	function song_ended(song) {		
 		var next_song = song.next('.song');
@@ -27,12 +27,12 @@ $(document).ready(function(){
 			// myAudio.currentTime = 0;
 			return;
 		}
-	}
+	};
 
 	function isPlaying(playerId) {
 	    var player = document.getElementById(playerId);
 	    return !player.paused && !player.ended && 0 < player.currentTime;	    
-	}
+	};
 
 	document.body.onkeydown = function(e){
 	    if(e.keyCode == 32){
@@ -46,11 +46,11 @@ $(document).ready(function(){
 		        }				
 			}
 	    }
-	}
+	};
 	
 	var name_spin = function(){
 
-		var word = "AНTON ЦCHMEРR";
+		var word = "AНXONVЦCHM7Р3";
 		var wordLength = word.length;
 		var scrambled = "";
 
@@ -62,25 +62,24 @@ $(document).ready(function(){
 
 		$('.my-name').text(scrambled);
 
-	}
+	};
 
 	spinAlt = 0;
 	var stop_name_spin = function() {
 		if(spinAlt === 0){
-			$('.my-name').css('font-family', 'helvetica').css('font-size', '0.95em').text('АНТОН СЦХМЕЕР');
+			$('.my-name').empty().css('font-family', 'helvetica').css('font-size', '0.95em').text('АНТОН СЦХМЕЕР');
 			spinAlt += 1;
 		}
 		else if(spinAlt === 1){
 			$('.my-name').empty().css('font-family', 'TIActuBeta-Regular_web').css('font-size', '1em').text('ANTON SCHMEER');
 			spinAlt -= 1;
-		}
-	    
-	}
+		}	    
+	};
 
 	$('.main-listing').scroll(function(){
 		name_spin();
 		// console.log('scrolling');
-	})
+	});
 
 	$('.main-listing').scroll(function() {
 	    clearTimeout($.data(this, 'scrollTimer'));
