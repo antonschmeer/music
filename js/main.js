@@ -50,7 +50,7 @@ $(document).ready(function(){
 	
 	var name_spin = function(){
 
-		var word = "AНXONVЦCHM7Р3";
+		var word = "ДЙX0NБЦCH7Ы3";
 		var wordLength = word.length;
 		var scrambled = "";
 
@@ -71,7 +71,7 @@ $(document).ready(function(){
 			spinAlt += 1;
 		}
 		else if(spinAlt === 1){
-			$('.my-name').empty().css({'font-family':'TIActuBeta-Regular_web', 'font-size':'1em'}).text('ANTON SCHMEER');
+			$('.my-name').empty().css({'font-family':'"TIActuBeta-Regular_web"', 'font-size':'1em'}).text('ANTON SCHMEER');
 			spinAlt -= 1;
 		}	    
 	};
