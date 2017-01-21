@@ -67,7 +67,7 @@ $(document).ready(function(){
 	spinAlt = 0;
 	var stop_name_spin = function() {
 		if(spinAlt === 0){
-			$('.my-name').empty().css({'font-family':'garamond, serif', 'font-size':'.95em', 'padding-top':'1px'}).text('АНТОН СЦХМЕЕР');
+			$('.my-name').empty().css({'font-family':'"Times New Roman", Times, serif', 'font-size':'.95em', 'padding-top':'1px'}).text('АНТОН СЦХМЕЕР');
 			spinAlt += 1;
 		}
 		else if(spinAlt === 1){
