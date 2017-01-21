@@ -67,11 +67,11 @@ $(document).ready(function(){
 	spinAlt = 0;
 	var stop_name_spin = function() {
 		if(spinAlt === 0){
-			$('.my-name').empty().css('font-family', 'helvetica').css('font-size', '0.95em').text('АНТОН СЦХМЕЕР');
+			$('.my-name').empty().css({'font-family':'garamond, serif', 'font-size':'.95em', 'padding-top':'1px'}).text('АНТОН СЦХМЕЕР');
 			spinAlt += 1;
 		}
 		else if(spinAlt === 1){
-			$('.my-name').empty().css('font-family', 'TIActuBeta-Regular_web').css('font-size', '1em').text('ANTON SCHMEER');
+			$('.my-name').empty().css({'font-family':'TIActuBeta-Regular_web', 'font-size':'1em', 'padding-top':'0px'}).text('ANTON SCHMEER');
 			spinAlt -= 1;
 		}	    
 	};
