@@ -50,7 +50,7 @@ $(document).ready(function(){
 	
 	var name_spin = function(){
 
-		var word = "ДЙXNБЦ7Ыἐπδτός";
+		var word = "ДЙXБЦ7Ыἐπδτός";
 		var wordLength = word.length;
 		var scrambled = "";
 
