@@ -116,7 +116,7 @@ textarea {
     left: 15px;
     top: 2px;
     z-index: 9999;
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
 
 .key_img {
@@ -134,11 +134,53 @@ textarea {
 
 span.my-name {
     position: fixed;
+    padding: 3px;
+    top: 15.3px;
+    left: 15px;
+}
+
+.my-name-link {
+    text-decoration: none;
+    color: #000;
+}
+
+span.my-name:hover {
+    background: #000;
+    cursor: pointer;
+    color: #fff;
+}
+
+span.my-name:hover .my-name-link {
+    color: #fff;
 }
 
 span.heading-contact {
     position: fixed;
-    left: 148px;
+    left: 152px;
+}
+
+.phone-number {
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+
+.phone-number:hover {
+    cursor: pointer;
+    color: #f8f8ed;
+    background: #84B4F3;
+}
+
+.email a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+
+.email a:hover {
+    cursor: pointer;    
+    color: #f8f8ed;
+    background: rgba(243, 143, 144, 1.00);
 }
 
 @media screen and (max-width: 768px) {
@@ -146,13 +188,16 @@ span.heading-contact {
         left: 7px;
         top: 40px;
     }
+    span.my-name {
+        left: 13px;
+    }
 
-    .email {
+    .email-line {
         position: fixed;
-        left: 15px;
+        left: 10px;
+        top: 62px;
     }
 }
-
 
 .main-listing {
     background-color: #f8f8ed;

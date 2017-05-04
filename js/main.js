@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+	$('.my-name').on('click', function(){
+		window.location.href = "https://antonschmeer.github.io/music";
+	})
+
 	$('.song').on('click', function(){
 
 		var song = $(this);
