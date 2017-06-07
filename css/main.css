@@ -107,6 +107,10 @@ textarea {
    margin-bottom: 20px;
 }
 
+.first-album {
+    margin-top: .5em;
+}
+
 .italic {
    font-style: italic;
 }
