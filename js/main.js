@@ -98,17 +98,20 @@ $(document).ready(function(){
 	});
 
 	// scroll reveal https://github.com/jlmakes/scrollreveal
-	window.sr = ScrollReveal();
-	sr.reveal('.main-listing p', {
-		container: '.main-listing', 
-		reset: true,
-		mobile: true,
-		easing: 'ease-in-out',
-		scale: 1, 
-		duration: 1600,
-		delay: 0,
-		viewFactor: 0.1,
-		viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
-		distance: '0px'
-	});
+
+	setTimeout(function(){
+		window.sr = ScrollReveal();
+		sr.reveal('.main-listing p', {
+			container: '.main-listing', 
+			reset: true,
+			mobile: true,
+			easing: 'ease-in-out',
+			scale: 1, 
+			duration: 1600,
+			delay: 0,
+			viewFactor: .1,
+			viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
+			distance: '0px'
+		})		
+	}, 4000);
 });
