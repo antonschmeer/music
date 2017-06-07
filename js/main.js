@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	$('.main-listing').animate({
+        scrollTop: $('.scroll-marker').offset().top
+    }, 0);
+
+    $('.main-listing').animate({
+        scrollTop: $('.first-album').offset().top
+    }, 10);
+
 	$('.my-name').on('click', function(){
 		window.location.href = "https://antonschmeer.github.io/music";
 	})
