@@ -24,6 +24,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GaramondPremrPro-MedItDisp';
+    src: url('fonts/Garamond/GaramondPremrPro-MedItDisp.eot');
+    src: url('fonts/Garamond/GaramondPremrPro-MedItDisp.eot?#iefix') format('embedded-opentype'), url('fonts/Garamond/GaramondPremrPro-MedItDisp.woff') format('woff'), url('fonts/Garamond/GaramondPremrPro-MedItDisp.ttf') format('truetype'), url('fonts/GaramondPremrPro-MedItDisp.svg#GaramondPremrPro-MedItDisp') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 html {
     color: #222;
     font-size: 1em;
@@ -100,6 +110,14 @@ textarea {
 
 .thin {
    font-family: 'TIActuBetaMono-Thin_web';
+}
+
+.garamond {
+    font-family: 'GaramondPremrPro-MedItDisp', 'TIActuBeta-Regular_web';
+    -webkit-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+    -webkit-font-feature-settings: 'liga', 'clig';
+    font-feature-settings: 'liga', 'clig';
 }
 
 .album {
