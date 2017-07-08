@@ -68,8 +68,8 @@ body {
     background-color: rgba(0,0,0,0);
     font-family: 'GaramondPremrPro-MedItDisp';
     font-size: 62em;
-    color: rgba(0,0,0,0.06);
     line-height: 0.6em;
+    color: rgba(0,0,0,0.06);
     overflow: hidden;
     z-index: 1;
 }
