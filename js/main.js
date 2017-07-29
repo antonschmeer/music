@@ -29,8 +29,16 @@
 			});
 
 			$('#background-animation').css({'background-image':'url(img/animated-bg.gif'});
+			
+			var rotation = 40;
+			$('#background-animation').css({
+				'-webkit-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
+			    '-moz-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
+			    '-ms-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
+			    'transform' : 'rotate('+ rotation +'deg) scale(2.4)'		    	
+			});
 
-			$('#background-animation').fadeOut(1800, function(){
+			$('#background-animation').fadeTo(800, 0, function(){
 				$('#background-animation').empty();
 			});
 
