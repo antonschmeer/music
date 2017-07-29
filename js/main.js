@@ -22,6 +22,12 @@ $(document).ready(function(){
 		});
 	});
 
+	$('#background-animation').css({'background-image':'url(img/animated-bg.gif;'});
+
+	$('#background-animation').fadeOut(1800, function(){
+		$('#background-animation').empty();
+	});
+
 	function song_ended(song) {		
 		var next_song = song.next('.song');
 		if(next_song[0]) {
