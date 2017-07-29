@@ -22,7 +22,7 @@ $(document).ready(function(){
 		});
 	});
 
-	$('#background-animation').css({'background-image':'url(img/animated-bg.gif;'});
+	$('#background-animation').css({'background-image':'url(img/animated-bg.gif'});
 
 	$('#background-animation').fadeOut(1800, function(){
 		$('#background-animation').empty();
