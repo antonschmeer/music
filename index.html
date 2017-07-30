@@ -31,7 +31,7 @@
 
         <p style="opacity:0;" class="regular heading"><span class="my-name"><a href="https://antonschmeer.github.io/music" class="my-name-link">ANTON SCHMEER</a></span><span class="thin heading-contact">&nbsp;Los Angeles, CA <a href="tel:4153906696" class="phone-number">(415)390-6696</a><span class="email-line"><span class="email"><a href="mailto:antonschmeer@protonmail.ch">antonschmeer@protonmail.ch</a></span><a target="_blank" href="misc/antonschmeerPGPkey.txt"><img class="key_img" src="img/icons/key.png"></a></span></span></p>
 
-        <div id="background-text-fill">Achilles Dreams of Nostos</div>
+        <div id="background-text-fill" style="opacity:0;">Achilles Dreams of Nostos</div>
         <div id="background-animation"></div>
         
         <div class="main-listing">
@@ -109,7 +109,8 @@
         <script type="text/javascript" src="js/vendor/scrollreveal.min.js"></script>  
         <script type="text/javascript">
             function loadText(){
-                $('p.heading').animate({opacity:1}, 1000);      
+                $('p.heading').animate({opacity:1}, 2000);    
+                $('#background-text-fill').animate({opacity:1}, 2000);      
             }
             loadText();
         </script>      
