@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.min.css">
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>  
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>         
         <style>
             .main-listing p {
                 visibility: hidden;
@@ -29,7 +29,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <p class="regular heading"><span class="my-name"><a href="https://antonschmeer.github.io/music" class="my-name-link">ANTON SCHMEER</a></span><span class="thin heading-contact">&nbsp;Los Angeles, CA <a href="tel:4153906696" class="phone-number">(415)390-6696</a><span class="email-line"><span class="email"><a href="mailto:antonschmeer@protonmail.ch">antonschmeer@protonmail.ch</a></span><a target="_blank" href="misc/antonschmeerPGPkey.txt"><img class="key_img" src="img/icons/key.png"></a></span></span></p>
+        <p style="opacity:0;" class="regular heading"><span class="my-name"><a href="https://antonschmeer.github.io/music" class="my-name-link">ANTON SCHMEER</a></span><span class="thin heading-contact">&nbsp;Los Angeles, CA <a href="tel:4153906696" class="phone-number">(415)390-6696</a><span class="email-line"><span class="email"><a href="mailto:antonschmeer@protonmail.ch">antonschmeer@protonmail.ch</a></span><a target="_blank" href="misc/antonschmeerPGPkey.txt"><img class="key_img" src="img/icons/key.png"></a></span></span></p>
 
         <div id="background-text-fill">Achilles Dreams of Nostos</div>
         <div id="background-animation"></div>
@@ -106,6 +106,12 @@
 
         <script type='application/javascript' src='js/vendor/fastclick.js'></script>
         <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/vendor/scrollreveal.min.js"></script>
+        <script type="text/javascript" src="js/vendor/scrollreveal.min.js"></script>  
+        <script type="text/javascript">
+            function loadText(){
+                $('p.heading').animate({opacity:1}, 1000);      
+            }
+            loadText();
+        </script>      
     </body>
 </html>
