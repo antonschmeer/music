@@ -3,7 +3,26 @@
 	window.onload = init;
 
 	function init(){
-	  	
+
+	  	$(document).ready(function(){
+	  		
+	  		$('#background-animation').css({'background-image':'url(img/animated-bg.gif'});
+	  		
+	  		var rotation = 50;
+	  		$('#background-animation').css({
+	  			'-webkit-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
+	  		    '-moz-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
+	  		    '-ms-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
+	  		    'transform' : 'rotate('+ rotation +'deg) scale(2.4)'		    	
+	  		});
+
+	  		setTimeout(function(){
+		  		$('#background-animation').fadeTo(400, 0, function(){
+		  			$('#background-animation').empty();
+		  		});
+	  		}, 1000);
+	  	});
+
 		$(document).ready(function(){
 
 			$('.my-name').on('click', function(){
@@ -26,21 +45,7 @@
 				myAudio.addEventListener("ended", function(){
 				    song_ended(song);
 				});
-			});
-
-			$('#background-animation').css({'background-image':'url(img/animated-bg.gif'});
-			
-			var rotation = 40;
-			$('#background-animation').css({
-				'-webkit-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
-			    '-moz-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
-			    '-ms-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
-			    'transform' : 'rotate('+ rotation +'deg) scale(2.4)'		    	
-			});
-
-			$('#background-animation').fadeTo(800, 0, function(){
-				$('#background-animation').empty();
-			});
+			});				
 
 			function song_ended(song) {		
 				var next_song = song.next('.song');
