@@ -8,6 +8,9 @@
 
 			$(document).ready(function(){
 
+				$('p.heading').animate({opacity:1}, 1000);    
+				$('#background-text-fill').animate({opacity:1}, 4000); 
+
 				$('.my-name').on('click', function(){
 					window.location.href = "https://antonschmeer.github.io/music";
 				})
