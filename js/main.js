@@ -147,6 +147,8 @@
 			  			$('#background-animation').empty();
 
 			  			finishLoad();
+
+			  			$('#background-black').fadeTo(3000, 0);
 			  		});
 		  		}, 1000);
 	  		}
