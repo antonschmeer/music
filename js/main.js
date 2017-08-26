@@ -132,49 +132,52 @@
 	  	$(document).ready(function(){
 
 	  		var loadBackground = function(){
-		  		$('#background-animation').css({'background-image':'url(img/animated-bg.gif'});
+	  			// ANIMATED FOREGROUND
+		  		// $('#background-animation').css({'background-image':'url(img/animated-bg.gif'});
 		  		
-		  		var rotation = 50;
-		  		$('#background-animation').css({
-		  			'-webkit-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
-		  		    '-moz-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
-		  		    '-ms-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
-		  		    'transform' : 'rotate('+ rotation +'deg) scale(2.4)'		    	
-		  		});
+		  		// var rotation = 50;
+		  		// $('#background-animation').css({
+		  		// 	'-webkit-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
+		  		//     '-moz-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
+		  		//     '-ms-transform' : 'rotate('+ rotation +'deg) scale(2.4)',
+		  		//     'transform' : 'rotate('+ rotation +'deg) scale(2.4)'		    	
+		  		// });
 
 		  		setTimeout(function(){
-			  		$('#background-animation').fadeTo(400, 0, function(){
+			  		$('#background-animation').fadeTo(40, 0, function(){
 			  			$('#background-animation').empty();
 
 			  			finishLoad();
 
-			  			$('#background-black').fadeTo(3000, 0);
+			  			$('#background-black').fadeTo(300, 0);
 			  		});
 		  		}, 1000);
 	  		}
 
 	  		//create image to preload:
-  		    var imgPreload = new Image();
-  		    $(imgPreload).attr({
-  		        src: 'img/animated-bg.gif'
-  		    });
+  		    // var imgPreload = new Image();
+  		    // $(imgPreload).attr({
+  		    //     src: 'img/animated-bg.gif'
+  		    // });
 
-  		    //check if the image is already loaded (cached):
-  		    if (imgPreload.complete || imgPreload.readyState === 4) {
-  		        //image already loaded:
-  		        loadBackground();
-  		    } else {
-  		        //go fetch the image:
-  		        $(imgPreload).on("load", function(response, status, xhr){
-  		            if (status == 'error') {
-  		                console.log("image could not be loaded");
+  		    // //check if the image is already loaded (cached):
+  		    // if (imgPreload.complete || imgPreload.readyState === 4) {
+  		    //     //image already loaded:
+  		    //     loadBackground();
+  		    // } else {
+  		    //     //go fetch the image:
+  		    //     $(imgPreload).on("load", function(response, status, xhr){
+  		    //         if (status == 'error') {
+  		    //             console.log("image could not be loaded");
 
-  		            } else {
-  		                //image loaded:
-  		                loadBackground();
-  		            }
-  		        });
-  		    }	  			  			  		
+  		    //         } else {
+  		    //             //image loaded:
+  		    //             loadBackground();
+  		    //         }
+  		    //     });
+  		    // }	
+
+  		    loadBackground();  			  			  		
 	  	});	  	  
 	};
 })(window, document, undefined);
