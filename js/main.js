@@ -9,7 +9,7 @@
 			$(document).ready(function(){
 
 				$('p.heading').animate({opacity:1}, 1000);    
-				$('#background-text-fill').animate({opacity:1}, 4000); 
+				$('#background-text-fill').animate({opacity:1}, 900); 
 
 				$('.my-name').on('click', function(){
 					window.location.href = "https://antonschmeer.github.io/music";
@@ -132,7 +132,11 @@
 	  	$(document).ready(function(){
 
 	  		var loadBackground = function(){
-	  			// ANIMATED FOREGROUND
+
+	  			// ANIMATED FOREGROUND ... if using this, 
+	  			// un_comment "create image to preload" below 
+	  			// and delete/comment_out the then redundant loadBackground() 
+	  			// invocation below
 		  		// $('#background-animation').css({'background-image':'url(img/animated-bg.gif'});
 		  		
 		  		// var rotation = 50;
@@ -175,7 +179,7 @@
   		    //             loadBackground();
   		    //         }
   		    //     });
-  		    // }	
+  		    // };	
 
   		    loadBackground();  			  			  		
 	  	});	  	  
