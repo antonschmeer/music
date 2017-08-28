@@ -155,7 +155,7 @@
 
 			  			$('#background-black').fadeTo(300, 0);
 			  		});
-		  		}, 1000);
+		  		}, 700);
 	  		}
 
 	  		//create image to preload:
